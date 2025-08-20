@@ -2,7 +2,6 @@
 
 **Team:** {Team name/email} **Last modified:** {YYYY-MM-DD}
 
----
 ## Overview
 
 {A concise, high-level summary of the directory's purpose and its role within
@@ -38,7 +37,6 @@ and any parts of the system that live in other directories.}
 the primary test types (e.g., unit tests, browser tests) and list all
 directories where tests for this system exist.}
 
----
 ## Meta
 
 ### Purpose of a README
@@ -50,7 +48,6 @@ project. It provides a quick and handy overview of the codebase.
 - It supports codebase-wide consistency.
 - It serves as documentation for both humans and AI agents.
 
----
 ## Relevant Context
 
 These files and searches were identified as critical during investigation for
@@ -61,7 +58,6 @@ research. }
 
 {files}
 
----
 ## Document History
 
 A concise log of updates and changes to this document.

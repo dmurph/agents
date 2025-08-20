@@ -7,7 +7,6 @@
 - **Tracking Bug:** {Link to bug, e.g., crbug.com/123456}
 - **Design Doc:** {Link to Design Doc, if one exists}
 
----
 ## Subject
 
 { A brief description of the subject of this investigation. Bullet points
@@ -59,7 +58,6 @@ build and test.
 
 }
 
----
 ## Meta
 
 { Common investigation subjects:
@@ -83,7 +81,6 @@ context, changes needed for that design, etc). It is a living document during
 the investigation phase and serves as a reference for the design and
 implementation that follows. After project completion, it is no longer updated.
 
----
 ## Relevant Context
 
 Maintain a list of important files, code search queries, and other resources
@@ -98,7 +95,6 @@ for anyone working on this system in the future.
 *   **Other Links:**
     *   `[link to bug, doc, etc.]` }
 
----
 ## Document History
 
 { Log all document updates and changes here, in the format:
