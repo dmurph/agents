@@ -12,6 +12,14 @@
 { A brief description of the subject of this investigation. Bullet points
 encouraged. }
 
+### Discovered Key Considerations
+
+{Put discovered key considerations and risks that any solution has to keep in mind.}
+
+### Discovered Ideas
+
+{Put discovered ideas / proposals for how to solve the subject here.}
+
 ## Background
 
 { Provide broad concepts and context a reader would need to understand the
@@ -20,41 +28,60 @@ might not know. Link to other relevant documentation. }
 
 ## Investigation
 
-Meta: Detail the investigation as it unfolds. Record each step, the questions
-asked, the tools used (e.g., code searches, git blame), and the findings. This
-section should show your work and thought process, allowing others to follow
-your path of discovery.
+Instructions to self: Detail the investigation as it unfolds. Create a new
+section for each investigation step, including the questions asked, the tools
+used (e.g., code searches, git blame), and the findings. This overall
+investigation section should show your work and thought process, allowing others
+to follow your path of discovery.
 
 {
 
-### {YYYY-MM-DD HH:MM}: Read initial files and loaded all source code files referencing X
+### Step 1 (2025-08-20): Read initial files and loaded all source code files referencing X
 ... description of files , searches, findings, tests, conclussions drawn ....
 
 
-### {YYYY-MM-DD HH:MM}: Analyzed for dead code
+### Step 2 (2025-08-20): Analyzed for dead code
 ... description of files loaded, searches done, findings, conclussions drawn
 ....
 
-### {YYYY-MM-DD HH:MM}: etc
+### Step 3 ({YYYY-MM-DD}): etc
 ...
 
 ... more sections per stage / step of the investigation...
 
 }
 
-## Conclusions & Potential Solutions
+## Summary of Findings
 
 {
+Distill, elaborate, and summarize the discovered 'true' state of the world and codebase, discovered in the steps above. This should summarize the findings in terms of the original subject, but also accumulate **all** information above into an organized analysis, breaking things down into sections with headings. This often includes a "Existing Testing Infrastructure" section.
+}
 
-Summarize the key takeaways and conclusions from the investigation. This should
-be a clear and concise summary of the findings detailed above, without leaving
-out any important details for further designing and execution. Universal
-conclusions are called out, and as implementation ideas are found, information
-is broken down per-idea.
+## Potential Solutions
 
-If the project is about editing code, please include relevant build targets for
-tests, including test names, so that the implementation can easily know how to
-build and test.
+{
+Do the same distillation as above, but from the perspective of each idea. A testing plan
+
+### Solution Idea 1: <approach>
+
+Summarize key takeaways, research, and conclusions for this idea. Include testing plans.
+
+### Solution Idea 2: <idea>
+
+etc
+
+}
+
+{
+Other optional sections:
+
+## Risk Analysis
+
+Call out any found risks or concerns, and how they might be solved or not solved by different solutions.
+
+## Testing Plan
+
+Elaborate all possible testing fixtures that could be used, with analysis on how appropriate they are.
 
 }
 
@@ -72,20 +99,16 @@ Common caveats:
   are extremely large. Very large files should be called out as such. }
 
 ### Purpose of an Investigation Document
+
 An investigation document is a record of the research and exploration of a
-specific problem or area of the codebase. Its purpose is to gather context,
-identify challenges, and inform the creation of a design document. While it does
-not assume a specific solution / design, thorough the course of an invsetigation
-obvious ideas will appear, and these should be documented (with relevant
-context, changes needed for that design, etc). It is a living document during
-the investigation phase and serves as a reference for the design and
-implementation that follows. After project completion, it is no longer updated.
+specific problem or area of the codebase. It gathers facts, and does not make
+explicit proposals design decisions.
 
 ## Relevant Context
 
-Maintain a list of important files, code search queries, and other resources
-that were critical during the investigation. This serves as a quick reference
-for anyone working on this system in the future.
+Instructions to self: Maintain a list of important files, code search queries,
+and other resources that were critical during the investigation. This serves as
+a quick reference for anyone working on this system in the future.
 
 {
 *   **Files:**
@@ -99,9 +122,9 @@ for anyone working on this system in the future.
 
 { Log all document updates and changes here, in the format:
 
-| Date       | Summary of changes                                           |
-| ------------------ |----------------------------------------------------- |
-| {YYYY-MM-DD HH:mm} | Initial document creation, researched idea           |
-| ...        | ...                                                          |
+| Date       | Summary of changes                                              |
+| -----------|---------------------------------------------------------------- |
+| 2025-08-20 | Initial document creation, researched idea                      |
+| ...        | ...                                                             |
 
 }
