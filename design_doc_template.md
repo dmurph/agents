@@ -12,19 +12,22 @@
 ## Context
 
 ### Objective
-{ In 1-2 sentences, describe the business goal of this project. At a high level,
+{
+In 1-2 sentences, describe the business goal of this project. At a high level,
 what should be different once this design (or an alternative) is in place?
 
 For example: "chromeHat should keep the user's head shaded in the sun"
 
 This section should not:
-* Describe the problem (use "Background")
-* Propose a solution (use "Design")
-* Be a detailed list of requirements (use a PRD, requirements doc, or link an
-existing one above). }
+*   Describe the problem (use "Background")
+*   Propose a solution (use "Design")
+*   Be a detailed list of requirements (use a PRD, requirements doc, or link an
+    existing one above).
+}
 
 ### Background
-{ Provide context for an unfamiliar reader to understand the proposal.
+{
+Provide context for an unfamiliar reader to understand the proposal.
 
 * What is the problem?
 * Why is it important to solve?
@@ -36,7 +39,8 @@ This section should not:
 * Be a lengthy explanation with a lot of details. Instead, prefer to link to
   other docs where available.
 * Include information about your design
-* Talk about ideas to solve the problem. }
+* Talk about ideas to solve the problem.
+}
 
 ### Platforms
 {List the platforms this design affects. Example: Mac, Windows, Linux, Chrome
@@ -75,7 +79,8 @@ Briefly describe the alternative approach.
 *   **Reason for not choosing:** Explain why the proposed solution is better
     than this alternative.
 
-.... etc, with more alternatives as applicable... }
+.... etc, with more alternatives as applicable...
+}
 
 ## Technical Debt
 {
@@ -84,7 +89,8 @@ Briefly describe the alternative approach.
     you reduce it, or why can't it be addressed now)?
 2.  **New Debt:** Explain what new technical debt this design will incur (e.g.,
 temporary flags, keeping old code paths). How and when will this debt be paid
-down? }
+down?
+}
 
 ## Quality Attributes
 
@@ -131,7 +137,8 @@ dependencies), describe them and how they will be mitigated or monitored.}
 *   **Incognito:** Does your feature work differently in Incognito mode? No
     traces of user activity should be left on disk.
 *   **Note:** Features with significant privacy implications should use the
-internal template for a formal privacy review. }
+    internal template for a formal privacy review.
+}
 
 ### A11y (Accessibility)
 {If your feature introduces a new UI or changes an existing one, it must be
@@ -143,7 +150,6 @@ review.}
 behavior, interrupting a user flow)? If so, describe the plan for providing
 advanced notice to IT admins and whether a policy control will be provided to
 disable the feature.}
-
 
 ## Testing Plan
 {Describe what the test team may need to consider before approving your launch.
@@ -162,7 +168,8 @@ are assumed to be comprehensive.}
     metrics](https://docs.google.com/document/d/1Ww487ZskJ-xBmJGwPO-XPz_QcJvw-kSNffm0nPhVpj8/edit)
     are good candidates for performance regressions.
 *   **Experiments:** If using Finch to run experiments, describe what
-experiments you intend to run and what you are looking for in the results. }
+    experiments you intend to run and what you are looking for in the results.
+}
 
 ### Rollout
 {If you’re doing a standard dev-beta-stable progression, write “Waterfall”. If
@@ -176,19 +183,21 @@ reached the stable channel?}
 
 ## Meta
 
-{ This template is attempting to have an exhaustive list of sections that would
+{
+This template is attempting to have an exhaustive list of sections that would
 be needed for a relatively complex feature, involving a product change with a
 rollout plan, etc. Some design docs for small changes will not need nearly as
 many sections here. Sections should only be included if relevant. **My process
 will be:**
-1. Read this entire template to understand the required information.
-2. Fill in each section with the information provided in the prompt or source
-   material.
-3. For sections where information is missing, I will use a placeholder like
-   `[Information needed]` and, if appropriate, ask the user for the missing
-   details.
-4. I will replace all curly-bracketed `{...}` placeholders with concrete
-   information (or `[Information needed]`). }
+1.  Read this entire template to understand the required information.
+2.  Fill in each section with the information provided in the prompt or source
+    material.
+3.  For sections where information is missing, I will use a placeholder like
+    `[Information needed]` and, if appropriate, ask the user for the missing
+    details.
+4.  I will replace all curly-bracketed `{...}` placeholders with concrete
+    information (or `[Information needed]`).
+}
 
 ### Purpose of a Design Doc
 A design doc is a living document that serves as the single source of truth for
@@ -196,10 +205,10 @@ a project. Its primary purpose is to force clarity of thought, to build
 consensus among stakeholders, and to serve as a historical record for future
 developers. It should clearly articulate the problem, the proposed solution, and
 the reasoning behind the chosen path, including why alternatives were discarded.
-It should not be a living document (systems change), but instead documenting a
-single point of time.
+It should not be a living document (as systems change), but instead documenting
+a single point of time.
 
-## Key Files and Context
+## Relevant Key Files and Context
 
 These files and searches were identified as critical during investigation and
 design, and will be referenced during implementation.
@@ -207,14 +216,26 @@ design, and will be referenced during implementation.
 Maintain a list of important files  and code search queries referenced during
 research and implementation here:
 
-{files}
+{
+*   **Files:**
+    *   `//path/to/relevant/file.cc`
+*   **Key Functions:**
+    *   `ClassInCodebase::MethodName`
+    *   ....
+*   **Key Code Search Queries:**
+    *   `"MethodName\(" lang:c++`
+    *   ...
+*   **Other Key Items:**
+    *   bug links, docs, commits, etc
+}
 
 ## Document history
-{ Log all document updates and changes here, in the format:
+{
+Log all document updates and changes here, in the format:
 
-| Date       | Summary of changes                                                                      |
-| - |  |
-| {YYYY-MM-DD} | Create the design document with initial proposal of X, from investigation in document Y |
-| ...        | ...                                                                                     |
+| Date       | Summary of changes                                              |
+| -----------|---------------------------------------------------------------- |
+| 2025-08-20 | Initial document creation and draft proposal from investigation |
+| 2025-08-21 | ...                                                             |
 
 }

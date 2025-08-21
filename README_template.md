@@ -1,6 +1,7 @@
 # {Feature or System Name}
 
-**Team:** {Team name/email} **Last modified:** {YYYY-MM-DD}
+* **Team:** {Team name/email}
+* **Last modified:** {YYYY-MM-DD}
 
 ## Overview
 
@@ -56,7 +57,18 @@ this document, or working in this system.
 { Maintain a list of important files  and code search queries referenced during
 research. }
 
-{files}
+{
+*   **Files:**
+    *   `//path/to/relevant/file.cc`
+*   **Key Functions:**
+    *   `ClassInCodebase::MethodName`
+    *   ....
+*   **Key Code Search Queries:**
+    *   `"MethodName\(" lang:c++`
+    *   ...
+*   **Other Key Items:**
+    *   bug links, docs, commits, etc
+}
 
 ## Document History
 

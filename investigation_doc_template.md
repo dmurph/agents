@@ -9,8 +9,8 @@
 
 ## Subject
 
-{ A brief description of the subject of this investigation. Bullet points
-encouraged. }
+{A brief description of the subject of this investigation. Bullet points
+encouraged.}
 
 ### Discovered Key Considerations
 
@@ -31,12 +31,12 @@ might not know. Link to other relevant documentation. }
 Instructions to self: Detail the investigation as it unfolds. Create a new
 section for each investigation step, including the questions asked, the tools
 used (e.g., code searches, git blame), and the findings. This overall
-investigation section should show your work and thought process, allowing others
-to follow your path of discovery.
+investigation section should show my work and thought process, allowing others
+to follow my path of discovery.
 
 {
 
-### Step 1 (2025-08-20): Read initial files and loaded all source code files referencing X
+### Step 1 (2025-08-20): Read files in directory X, looking for usage of Y
 ... description of files , searches, findings, tests, conclussions drawn ....
 
 
@@ -53,23 +53,26 @@ to follow your path of discovery.
 
 ## Summary of Findings
 
-{
-Distill, elaborate, and summarize the discovered 'true' state of the world and codebase, discovered in the steps above. This should summarize the findings in terms of the original subject, but also accumulate **all** information above into an organized analysis, breaking things down into sections with headings. This often includes a "Existing Testing Infrastructure" section.
-}
+{Distill, elaborate, and summarize the discovered 'true' state of the world and
+codebase, discovered in the steps above. This should summarize the findings in
+terms of the original subject, but also accumulate **all** information above
+into an organized analysis, breaking things down into sections with headings.
+This often includes a "Existing Testing Infrastructure" section.}
 
 ## Potential Solutions
 
 {
-Do the same distillation as above, but from the perspective of each idea. A testing plan
+Do the same type of distillation as above, but from the perspective of each
+idea.
 
 ### Solution Idea 1: <approach>
 
-Summarize key takeaways, research, and conclusions for this idea. Include testing plans.
+Summarize key takeaways, research, and conclusions for this idea. Include
+testing plans.
 
 ### Solution Idea 2: <idea>
 
 etc
-
 }
 
 {
@@ -77,17 +80,20 @@ Other optional sections:
 
 ## Risk Analysis
 
-Call out any found risks or concerns, and how they might be solved or not solved by different solutions.
+Call out any found risks or concerns, and how they might be solved or not solved
+by different solutions.
 
-## Testing Plan
+## Testing Analysis
 
-Elaborate all possible testing fixtures that could be used, with analysis on how appropriate they are.
+Elaborate all possible testing fixtures that could be used, with analysis on how
+appropriate they are.
 
 }
 
 ## Meta
 
-{ Common investigation subjects:
+{
+Common investigation subjects:
 - Is there dead code, or newly dead code with changes?
 - How do we build this code? What targets include it?
 - Are there existing tests that test this code, and which targets they are in
@@ -96,7 +102,8 @@ Elaborate all possible testing fixtures that could be used, with analysis on how
 
 Common caveats:
 - Some files, like fieldtrial_testing_config.json, histograms.xml, and enums.xml
-  are extremely large. Very large files should be called out as such. }
+  are extremely large. Very large files should be called out as such.
+}
 
 ### Purpose of an Investigation Document
 
@@ -113,18 +120,24 @@ a quick reference for anyone working on this system in the future.
 {
 *   **Files:**
     *   `//path/to/relevant/file.cc`
-*   **Code Searches:**
-    *   `[link to code search]`
-*   **Other Links:**
-    *   `[link to bug, doc, etc.]` }
+*   **Key Functions:**
+    *   `ClassInCodebase::MethodName`
+    *   ....
+*   **Key Code Search Queries:**
+    *   `"MethodName\(" lang:c++`
+    *   ...
+*   **Other Key Items:**
+    *   bug links, docs, commits, etc
+}
 
 ## Document History
 
-{ Log all document updates and changes here, in the format:
+{
+Log all document updates and changes here, in the format:
 
 | Date       | Summary of changes                                              |
 | -----------|---------------------------------------------------------------- |
-| 2025-08-20 | Initial document creation, researched idea                      |
-| ...        | ...                                                             |
+| 2025-08-20 | Initial document creation, initial research                     |
+| 2025-08-21 | ...                                                             |
 
 }
