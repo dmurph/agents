@@ -1,7 +1,7 @@
 # [Project Name Here]: Implementation Plan & TODO Log
 
-**Investigation Doc:** {Link to investigation doc, if one exists}
-**Design Doc:** {Link to design doc, if one exists}
+* **Investigation Doc:** {Link to investigation doc, if one exists}
+* **Design Doc:** {Link to design doc, if one exists}
 
 ## 1. Instructions for Self
 
