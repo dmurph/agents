@@ -1,7 +1,6 @@
 # {Feature or System Name}
 
 * **Team:** {Team name/email}
-* **Last modified:** {YYYY-MM-DD}
 
 ## Overview
 
@@ -68,17 +67,4 @@ research. }
     *   ...
 *   **Other Key Items:**
     *   bug links, docs, commits, etc
-}
-
-## Document History
-
-A concise log of updates and changes to this document.
-
-{
-
-| Date        | Summary of changes                                             |
-| ------------------ | ------------------------------------------------------- |
-| {YYYY-MM-DD HH:mm} | Created the README                                      |
-| ...                | ...                                                     |
-
 }
