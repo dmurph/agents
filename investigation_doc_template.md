@@ -7,6 +7,25 @@
 - **Tracking Bug:** {Link to bug, e.g., crbug.com/123456}
 - **Design Doc:** {Link to Design Doc, if one exists}
 
+{
+
+**Purpose of an Investigation Document**: An investigation document is a record
+of the research and exploration of a specific problem or area of the codebase.
+It gathers facts, and does not make explicit proposals design decisions.
+
+Common investigation subjects:
+- Is there dead code, or newly dead code with changes?
+- How do we build this code? What targets include it?
+- Are there existing tests that test this code, and which targets they are in
+  (e.g. how to build & run these tests)?
+- What platforms will be running this code?
+
+Common caveats:
+- Some files, like fieldtrial_testing_config.json, histograms.xml, and enums.xml
+  are extremely large. Very large files should be called out as such.
+
+}
+
 ## Subject
 
 {A brief description of the subject of this investigation. Bullet points
@@ -87,37 +106,17 @@ by different solutions.
 
 Elaborate all possible testing fixtures that could be used, with analysis on how
 appropriate they are.
-
 }
 
-## Meta
-
-{
-Common investigation subjects:
-- Is there dead code, or newly dead code with changes?
-- How do we build this code? What targets include it?
-- Are there existing tests that test this code, and which targets they are in
-  (e.g. how to build & run these tests)?
-- What platforms will be running this code?
-
-Common caveats:
-- Some files, like fieldtrial_testing_config.json, histograms.xml, and enums.xml
-  are extremely large. Very large files should be called out as such.
-}
-
-### Purpose of an Investigation Document
-
-An investigation document is a record of the research and exploration of a
-specific problem or area of the codebase. It gathers facts, and does not make
-explicit proposals design decisions.
 
 ## Relevant Context
+
+{
 
 Instructions to self: Maintain a list of important files, code search queries,
 and other resources that were critical during the investigation. This serves as
 a quick reference for anyone working on this system in the future.
 
-{
 *   **Files:**
     *   `//path/to/relevant/file.cc`
 *   **Key Functions:**

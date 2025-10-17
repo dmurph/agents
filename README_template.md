@@ -1,6 +1,17 @@
 # {Feature or System Name}
 
 * **Team:** {Team name/email}
+- **Last modified:** {YYYY-MM-DD HH:MM}
+
+{
+**Purpose of a README**: A README file in a codebase serves as a starting point
+for understanding the project. It provides a quick and handy overview of the
+codebase.
+- It helps new engineers become efficient and effective by providing necessary
+  information about the codebase.
+- It supports codebase-wide consistency.
+- It serves as documentation for both humans and AI agents.
+}
 
 ## Overview
 
@@ -36,17 +47,6 @@ and any parts of the system that live in other directories.}
 {How should developers write tests for changes *within* this system? Describe
 the primary test types (e.g., unit tests, browser tests) and list all
 directories where tests for this system exist.}
-
-## Meta
-
-### Purpose of a README
-A README file in a codebase serves as a starting point for understanding the
-project. It provides a quick and handy overview of the codebase.
-
-- It helps new engineers become efficient and effective by providing necessary
-  information about the codebase.
-- It supports codebase-wide consistency.
-- It serves as documentation for both humans and AI agents.
 
 ## Relevant Context
 
