@@ -45,30 +45,6 @@ encouraged.}
 investigation. This is especially for information a typical Chromium developer
 might not know. Link to other relevant documentation. }
 
-## Investigation
-
-Instructions to self: Detail the investigation as it unfolds. Create a new
-section for each investigation step, including the questions asked, the tools
-used (e.g., code searches, git blame), and the findings. This overall
-investigation section should show my work and thought process, allowing others
-to follow my path of discovery.
-
-{
-
-### Step 1 (2025-08-20): Read files in directory X, looking for usage of Y
-... description of files , searches, findings, tests, conclussions drawn ....
-
-
-### Step 2 (2025-08-20): Analyzed for dead code
-... description of files loaded, searches done, findings, conclussions drawn
-....
-
-### Step 3 ({YYYY-MM-DD}): etc
-...
-
-... more sections per stage / step of the investigation...
-
-}
 
 ## Summary of Findings
 
@@ -129,14 +105,28 @@ a quick reference for anyone working on this system in the future.
     *   bug links, docs, commits, etc
 }
 
-## Document History
+## Investigation
+
+Instructions to self: Detail the investigation as it unfolds. Create a new
+section for each investigation step, including the questions asked, the tools
+used (e.g., code searches, git blame), and the findings. This overall
+investigation section should show my work and thought process, allowing others
+to follow my path of discovery. Each investigation step can simply append to the
+file here, making editing simple.
 
 {
-Log all document updates and changes here, in the format:
 
-| Date       | Summary of changes                                              |
-| -----------|---------------------------------------------------------------- |
-| 2025-08-20 | Initial document creation, initial research                     |
-| 2025-08-21 | ...                                                             |
+### Step 1 (2025-08-20): Read files in directory X, looking for usage of Y
+... description of files , searches, findings, tests, conclussions drawn ....
+
+
+### Step 2 (2025-08-20): Analyzed for dead code
+... description of files loaded, searches done, findings, conclussions drawn
+....
+
+### Step 3 ({YYYY-MM-DD}): etc
+...
+
+... more sections per stage / step of the investigation...
 
 }
